@@ -9,7 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Build master & minion from Vagrant's precise64 image
   config.vm.box = "precise64"
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
-  config.vm.synced_folder "salt/", "/srv/salt"
+  config.vm.synced_folder "salt-state-tree/", "/srv/salt"
   
   # Use the host machine's resolver as a DNS proxy
   config.vm.provider :virtualbox do |vb|
