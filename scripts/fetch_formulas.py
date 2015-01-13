@@ -5,6 +5,7 @@ from __future__ import print_function
 from subprocess import check_call
 from os import makedirs, path
 from sys import exit
+from subprocess import CalledProcessError
 
 try:
     from github import Github
